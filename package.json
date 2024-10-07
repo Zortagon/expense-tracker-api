@@ -1,18 +1,27 @@
 {
     "name": "express-expense-tracker",
     "version": "1.0.0",
-    "main": "index.js",
+    "author": "Aldian Fernanda",
+    "main": "./src/main.ts",
+    "description": "",
+    "license": "MIT",
+    "private": true,
     "scripts": {
         "build": "tsc --build",
-        "serve": "nodemon --verbose ./src/main.ts"
+        "serve": "nodemon --verbose ./src/main.ts",
+        "start": "node ./dist/main.js"
     },
-    "author": "Aldian Fernanda",
-    "license": "MIT",
-    "description": "",
     "devDependencies": {
+        "@types/express": "^5.0.0",
+        "@types/node": "^22.7.4",
         "nodemon": "^3.1.7",
         "prettier": "^3.3.3",
+        "prisma": "^5.20.0",
         "ts-node": "^10.9.2",
         "typescript": "^5.6.2"
+    },
+    "dependencies": {
+        "@prisma/client": "^5.20.0",
+        "express": "^4.21.0"
     }
 }
